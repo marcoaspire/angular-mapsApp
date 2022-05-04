@@ -1,0 +1,27 @@
+<div class="row mt-3">
+  <div class="col-1"></div>
+  <div class="col">
+    <h1>Propiedades</h1>
+  </div>
+</div>
+<div class="row container">
+  <div class="col-1"></div>
+  <div class="col">
+    <div class="row">
+      <div class="col-4 mb-2 ml-2"
+        *ngFor="let p of propiedades"
+      >
+      <div class="card">
+          <!-- <app-mini-mapa [lngLat]="p.lngLat" class="card-img-top"></app-mini-mapa> -->
+          <app-mini-mapa [lngLat]="p.lngLat" class="card-img-top"></app-mini-mapa>
+          <div class="card-body">
+            <h5 class="card-item">{{p.titulo}}</h5>
+            <div class="card-text">{{p.descripcion}}</div>
+          </div>
+        </div>
+        <h5 class="card-item">{{p.titulo}}</h5>
+            <div class="card-text">{{p.descripcion}}</div>
+      </div>
+    </div>
+  </div>
+</div>
